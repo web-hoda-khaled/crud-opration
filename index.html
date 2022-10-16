@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylee.css" />
+    </head>
+    <body class="bg-success">
+
+
+
+
+
+
+    <div class="container-fluid">
+    <div class="pt-3 container pb-5">
+
+
+        <label for="productName" class="mb-2">Porduct Name</label>
+        <input id="productName" type="text" class="form-control" placeholder="Porduct Name" />
+        <div id="alertName" class="alert alert-danger mt-3" role="alert">
+          check your name !
+        </div>
+
+        <label for="productPrice" class="mt-3 mb-2">Product Price</label>
+        <input id="productPrice" type="number" class="form-control" placeholder="Product Price"/>
+
+        <div id="alertPrice" class="alert alert-danger mt-3" role="alert">
+          check your price!
+        </div>
+
+        
+        <label for="productCategory" class="mt-3 mb-2">Product Category</label>
+        <input id="productCategory" type="text" class="form-control" placeholder="Product Category"/>
+
+        <div id="alertCategory" class="alert alert-danger mt-3" role="alert">
+          check your Category!
+        </div>
+
+
+        <label for="productDesc" class="mt-3 mb-2">Product Descraption</label>
+        <textarea id="productDesc" type="text" class="form-control" placeholder="Product Descraption" ></textarea>
+
+        <div id="alertDesc" class="alert alert-danger mt-3" role="alert">
+          check your Descraption!
+        </div>
+
+    <button type="button" id="btn"  onclick="addProduct()" class="btn btn-warning mt-5 w-100">Add Product</button>
+
+    <input id="serch" oninput="serch(this.value)"  type="text" class="form-control w-75 m-auto mt-5" placeholder="serch by name...."/>
+
+    </div>
+
+
+
+    <table class="table w-75 mx-auto mt-5 by-5 text-center table-striped bg-white ">
+      <thead>
+        <th  class="py-3">Index</th>
+        <th  class="py-3">Name</th>
+        <th  class="py-3">Price</th>
+        <th  class="py-3">Category</th>
+        <th  class="py-3">Descraption</th>
+        <th  class="py-3">Uptade</th>
+        <th  class="py-3">Delete</th>
+      </thead>
+      <tbody id="tableBody">
+
+
+      </tbody>
+    </table>
+    </div><!--./container-->
+
+
+    
+    <script src="js/index.js"></script>
+    </body>
+</html>
